@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,700,600italic,600,400italic);
+
+body {
+  font-family: "Titillium Web", cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f1eae0;
+  background-image: url("images/Background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#days {
+  font-size: 100px;
+  color: #db4844;
+}
+#hours {
+  font-size: 100px;
+  color: #f07c22;
+}
+#minutes {
+  font-size: 100px;
+  color: #f6da74;
+}
+#seconds {
+  font-size: 50px;
+  color: #abcd58;
+}
+span {
+  display: block;
+  font-size: 20px;
+  color: white;
+}
+
+.cooldown {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.Parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.InvitationImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.SlideImg {
+  max-width: 100%;
+  height: auto;
+}
+.SlideCol {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+.NamesCol {
+  bottom: 46%;
+}
+.OccasionCol {
+  bottom: 24%;
+}
+.VenueCol {
+  bottom: 3.2%;
+}
+.LocationCol {
+  width: 100%;
+  position: absolute;
+  /* bottom: 14.5%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LocationDiv {
+  z-index: 100 !important;
+}
+.animatedpulsecircle {
+  border-radius: 50%;
+  background-color: #d05a45;
+  bottom: 25% !important;
+  /* left: 48.8%; */
+  position: absolute;
+  opacity: 0;
+  animation: scaleIn 3s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+}
+.ContactCol {
+  position: absolute;
+  display: inline-flex;
+  column-gap: 15%;
+  justify-content: space-between;
+}
+
+.FadeInAnimation {
+  opacity: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .ContactCol1 {
+    bottom: 18%;
+    left: 56%;
+  }
+  .ContactCol2 {
+    bottom: 1%;
+    left: 56%;
+  }
+  .LocationIcon {
+    height: 22px;
+    width: 14px;
+  }
+  .animatedpulsecircle {
+    width: 20px;
+    height: 20px;
+  }
+  .ContactIcon {
+    height: 22px;
+    width: 22px;
+  }
+}
+
+/* Special small devices with height less than 650 (phones, height 650px and down) */
+@media only screen and (max-height: 660px) {
+  .animatedpulsecircle {
+    width: 18px;
+    height: 18px;
+  }
+  .ContactIcon {
+    height: 18px;
+    width: 18px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .ContactCol1 {
+    bottom: 18%;
+    left: 55%;
+  }
+  .ContactCol2 {
+    bottom: 1%;
+    left: 55%;
+  }
+  .LocationIcon {
+    height: 28px;
+    width: 20px;
+  }
+  .animatedpulsecircle {
+    width: 20px;
+    height: 20px;
+  }
+  .ContactIcon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .ContactCol1 {
+    bottom: 18%;
+    left: 55%;
+  }
+  .ContactCol2 {
+    bottom: 1%;
+    left: 55%;
+  }
+  .LocationIcon {
+    height: 30px;
+    width: 22px;
+  }
+  .animatedpulsecircle {
+    width: 24px;
+    height: 24px;
+  }
+  .ContactIcon {
+    height: 33px;
+    width: 33px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .ContactCol1 {
+    bottom: 18%;
+    left: 53.8%;
+  }
+  .ContactCol2 {
+    bottom: 1%;
+    left: 53.8%;
+  }
+  .LocationIcon {
+    height: 30px;
+    width: 22px;
+  }
+  .animatedpulsecircle {
+    width: 24px;
+    height: 24px;
+  }
+  .ContactIcon {
+    height: 34px;
+    width: 34px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .ContactCol1 {
+    bottom: 18%;
+    left: 53%;
+  }
+  .ContactCol2 {
+    bottom: 1%;
+    left: 53%;
+  }
+  .LocationIcon {
+    height: 30px;
+    width: 22px;
+  }
+  .animatedpulsecircle {
+    width: 25px;
+    height: 25px;
+  }
+  .ContactIcon {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+/* Biggest devices (largest laptops and desktops, 2560px and up) */
+@media only screen and (min-width: 2560px) {
+  .ContactCol1 {
+    bottom: 18%;
+    left: 51.7%;
+  }
+  .ContactCol2 {
+    bottom: 1%;
+    left: 51.7%;
+  }
+  .LocationIcon {
+    height: 30px;
+    width: 22px;
+  }
+  .animatedpulsecircle {
+    width: 25px;
+    height: 25px;
+  }
+  .ContactIcon {
+    height: 35px;
+    width: 35px;
+  }
+}
